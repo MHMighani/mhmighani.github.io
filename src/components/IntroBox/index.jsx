@@ -1,7 +1,8 @@
 import Image from "next/image";
 
+import Reachme from "@/components/Reachme";
+import introImage from "@/assets/images/intro_image.jpg";
 import styles from "./styles.module.scss";
-import introImage from "../../assets/images/intro_image.jpg";
 
 function Intro() {
   return (
@@ -13,7 +14,10 @@ function Intro() {
           src={introImage}
           alt="me"
         />
-        <p>Mohammad Hossein Mighani</p>
+        <div className={styles.name_contact}>
+          <h2>Mohammad Hossein Mighani</h2>
+          <Reachme />
+        </div>
       </div>
       <div className={styles.about}></div>
     </div>
