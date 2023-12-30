@@ -4,6 +4,9 @@ import Reachme from "@/components/Reachme";
 import introImage from "@/assets/images/intro_image.jpg";
 import styles from "./styles.module.scss";
 
+const ABOUT =
+  "I’m a Web Developer who has mainly focused on developing the Front-End part of web applications. I constantly seek for . In addition to JavaScript ES6 and React, I have experience working with Python.";
+
 function Intro() {
   return (
     <div className={styles.intro_box}>
@@ -19,7 +22,7 @@ function Intro() {
           <Reachme />
         </div>
       </div>
-      <div className={styles.about}></div>
+      <div className={styles.about}>{ABOUT}</div>
     </div>
   );
 }

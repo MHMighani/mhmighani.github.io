@@ -4,18 +4,18 @@
     width: 80%;
     margin: 10rem auto;
     height: 500px;
-    background-color: antiquewhite;
+    background-color: var(--navigation-background);
     border-radius: 1rem;
     overflow: hidden;
 
     &:after {
         content: '';
         position: absolute;
-        width: 5px;
+        width: 2px;
         bottom: 0;
         right: 50%;
         height: 100%;
-        background-color: burlywood;
+        background-color: var(--seperator-color);
     }
 }
 
