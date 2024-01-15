@@ -1,7 +1,8 @@
 :root {
   --window-background-color: #171b24;
-  --navigation-background: #1c212b;
+  --primary-bg: #1c212b;
   --seperator-color: #0c0e13;
+  --tab-color: #3979c1;
 }
 
 body {

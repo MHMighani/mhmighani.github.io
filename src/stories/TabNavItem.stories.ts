@@ -6,11 +6,20 @@ const meta: Meta<typeof TabNavItem> = {
   component: TabNavItem,
 };
 
+const tabName = "Tab";
+
 export default meta;
 type Story = StoryObj<typeof TabNavItem>;
 
 export const Primary: Story = {
   args: {
-    name: "Tab 2",
+    name: tabName,
+  },
+};
+
+export const Active: Story = {
+  args: {
+    active: true,
+    name: tabName,
   },
 };

@@ -1,3 +1,11 @@
 .tab {
-    background-color: inherit;
+    &[data-active="true"] {
+        border-bottom: 1px solid gold;
+    }
+
+    background-color: var(--primary-bg);
+    color: var(--tab-color);
+    padding: .3rem 4rem;
+    width: max-content;
+    cursor: pointer;
 }

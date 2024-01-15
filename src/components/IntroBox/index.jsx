@@ -23,7 +23,9 @@ function Intro() {
           <Reachme />
         </div>
       </div>
-      <div className={styles.about}></div>
+      <div className={styles.about}>
+        <TabNavItem name="tab1" />
+      </div>
     </div>
   );
 }
