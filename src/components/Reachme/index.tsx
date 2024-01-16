@@ -27,7 +27,7 @@ function ReachMe() {
     <div className={styles.contact_links}>
       {ITEMS.map((item) => (
         <a key={item.title} target="_blank" href={item.url}>
-          <FontAwesomeIcon icon={item.icon} />
+          <FontAwesomeIcon className={styles.icon} icon={item.icon} />
         </a>
       ))}
     </div>

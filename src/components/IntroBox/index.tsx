@@ -3,7 +3,7 @@ import Image from "next/image";
 import Reachme from "@/components/Reachme";
 import introImage from "@/assets/images/intro_image.jpg";
 import styles from "./styles.module.scss";
-import TabNavItem from "./../TabNavItem/index";
+import TabNavItem from "../Tab/components/TabNavItem/index";
 
 const ABOUT =
   "I’m a Web Developer who has mainly focused on developing the Front-End part of web applications. I constantly seek for . In addition to JavaScript ES6 and React, I have experience working with Python.";
@@ -22,9 +22,6 @@ function Intro() {
           <h2>Mohammad Hossein Mighani</h2>
           <Reachme />
         </div>
-      </div>
-      <div className={styles.about}>
-        <TabNavItem name="tab1" />
       </div>
     </div>
   );
