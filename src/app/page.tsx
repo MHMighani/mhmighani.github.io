@@ -1,5 +1,5 @@
-import Intro from "../components/IntroBox";
+import Main from "../components/Main";
 
 export default function Home() {
-  return <Intro />;
+  return <Main />;
 }

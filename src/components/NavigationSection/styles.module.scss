@@ -1,0 +1,20 @@
+.profile_image {
+    border-radius: 100%;
+}
+
+.profile_and_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.about {
+    width: 50%;
+}
+
+.name_contact {
+    display: flex;
+    flex-direction: column;
+}
