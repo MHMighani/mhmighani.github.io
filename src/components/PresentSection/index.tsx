@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import About from "../About";
 import TabNavItem from "../Tab/components/TabNavItem/index";
 import TabBar from "../Tab/components/TabBar";
 import styles from "./styles.module.scss";
@@ -11,7 +12,7 @@ const TAB_ITEMS = [
     tabIndex: 0,
     id: "intro",
     label: "About",
-    content: "Intro section",
+    content: <About />,
   },
   {
     tabIndex: 1,

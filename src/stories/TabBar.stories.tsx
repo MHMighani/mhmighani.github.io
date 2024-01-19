@@ -10,11 +10,12 @@ const meta: Meta<typeof TabBar> = {
 export default meta;
 type Story = StoryObj<typeof TabBar>;
 
-export const OneItem: Story = {
+export const MultipleItemsNormal: Story = {
   render: () => (
     <TabBar>
-      <TabNavItem name="Tab 1" />
-      <TabNavItem name="Tab 2" />
+      {Array.apply(null, Array(5)).map((item, index) => (
+        <TabNavItem key={index} tabIndex={index} name={`Tab ${index + 1}`} />
+      ))}
     </TabBar>
   ),
 };

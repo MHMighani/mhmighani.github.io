@@ -3,20 +3,21 @@ import { memo } from "react";
 import styles from "./styles.module.scss";
 
 type TabNavItemProps = {
-  name: String;
+  name: string;
   active?: Boolean;
-  handleClickTab: Function;
+  handleClickTab?: Function;
   tabIndex: number;
 };
 
 function TabNavItem({
   name,
   active = false,
-  handleClickTab,
+  handleClickTab = () => {},
   tabIndex,
 }: TabNavItemProps) {
   return (
     <div
+      title={name}
       onClick={() => handleClickTab(tabIndex)}
       data-active={active}
       className={styles.tab}

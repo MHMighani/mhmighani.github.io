@@ -8,6 +8,8 @@ const meta: Meta<typeof TabNavItem> = {
 };
 
 const tabName = "Tab";
+const longTitleText =
+  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, sed.";
 
 export default meta;
 type Story = StoryObj<typeof TabNavItem>;
@@ -22,5 +24,11 @@ export const Active: Story = {
   args: {
     active: true,
     name: tabName,
+  },
+};
+
+export const TextLong: Story = {
+  args: {
+    name: longTitleText,
   },
 };
