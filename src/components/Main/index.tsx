@@ -8,8 +8,8 @@ const ABOUT =
 function Main() {
   return (
     <div className={styles.main}>
-      <PresentSection />
       <NavigationSection />
+      <PresentSection />
     </div>
   );
 }

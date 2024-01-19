@@ -1,3 +1,10 @@
+.navigation_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
 .profile_image {
     border-radius: 100%;
 }
@@ -7,7 +14,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
 
 .about {

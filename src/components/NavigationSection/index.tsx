@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 function NavigationSection() {
   return (
-    <div className={styles.main}>
+    <section className={styles.navigation_section}>
       <div className={styles.profile_and_contact}>
         <Image
           className={styles.profile_image}
@@ -19,7 +19,7 @@ function NavigationSection() {
           <Reachme />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
