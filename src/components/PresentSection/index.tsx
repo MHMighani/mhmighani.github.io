@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import SkillsSet from "../SkillsSet";
 import About from "../About";
 import TabNavItem from "../Tab/components/TabNavItem/index";
 import TabBar from "../Tab/components/TabBar";
@@ -24,7 +25,7 @@ const TAB_ITEMS = [
     tabIndex: 2,
     id: "skills",
     label: "Skills",
-    content: "Skills",
+    content: <SkillsSet />,
   },
 ];
 
