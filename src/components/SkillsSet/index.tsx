@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import Skill from "../Skill";
+import styles from "./styles.module.scss";
 
 const SKILLS = [
   {
@@ -79,7 +80,7 @@ function SkillsSet() {
     );
   });
 
-  return <div>{renderSkillsSetImages}</div>;
+  return <div className={styles.skills}>{renderSkillsSetImages}</div>;
 }
 
 export default SkillsSet;
