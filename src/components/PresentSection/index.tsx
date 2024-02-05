@@ -6,6 +6,7 @@ import SkillsSet from "../SkillsSet";
 import About from "../About";
 import TabNavItem from "../Tab/components/TabNavItem/index";
 import TabBar from "../Tab/components/TabBar";
+import Experiences from "../Experiences";
 import styles from "./styles.module.scss";
 
 const TAB_ITEMS = [
@@ -19,7 +20,7 @@ const TAB_ITEMS = [
     tabIndex: 1,
     id: "experiences",
     label: "Experiences",
-    content: "Experiences",
+    content: <Experiences />,
   },
   {
     tabIndex: 2,
@@ -49,7 +50,7 @@ function PresentSection() {
   return (
     <section className={styles.present_section}>
       <TabBar>{renderTabItems}</TabBar>
-      <div>{activeContent}</div>
+      <div className={styles.tab_content_wrapper}>{activeContent}</div>
     </section>
   );
 }
