@@ -1,0 +1,22 @@
+.exp_card {
+    color: var(--primary-text-color);
+
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header__title_container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__header__title {
+        display: flex;
+        flex-direction: column;
+    }
+}
