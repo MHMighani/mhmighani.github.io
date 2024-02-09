@@ -10,6 +10,7 @@ const EXPERIENCES = [
     achievements: ["one", "two", "three"],
     duration: { from: "Jul 2022", to: "Present" },
     about: "A customer service chat service",
+    expExternalLink: "https://raychat.io/",
   },
 ];
 

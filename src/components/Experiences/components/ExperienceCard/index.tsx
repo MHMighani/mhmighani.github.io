@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
@@ -9,6 +10,7 @@ type Props = {
   duration: { from: string; to: string };
   achievements: string[];
   about: string;
+  expExternalLink?: string;
 };
 
 function ExperienceCard({
@@ -18,10 +20,19 @@ function ExperienceCard({
   duration,
   achievements,
   about,
+  expExternalLink,
 }: Props) {
   const renderAchievements = achievements.map((item, index) => (
     <li key={index}>{item}</li>
   ));
+
+  const renderExpSubtitle = expExternalLink ? (
+    <Link target="_blank" href={expExternalLink}>
+      {expSubTitle}
+    </Link>
+  ) : (
+    <span>{expSubTitle}</span>
+  );
 
   return (
     <div className={styles.exp_card}>
@@ -37,7 +48,7 @@ function ExperienceCard({
           />
           <div className={styles.exp_card__header__title}>
             <h3>{expTitle}</h3>
-            <span>{expSubTitle}</span>
+            <span>{renderExpSubtitle}</span>
           </div>
         </div>
 

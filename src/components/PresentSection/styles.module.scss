@@ -1,8 +1,12 @@
 .present_section {
+    display: flex;
+    flex-direction: column;
     padding: .2rem;
-    width: 50%;
+    flex-basis: 50%;
 }
 
 .tab_content_wrapper {
+    height: 100%;
     padding: 1rem;
+    overflow: auto;
 }
