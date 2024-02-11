@@ -48,14 +48,14 @@ function ExperienceCard({
           />
           <div className={styles.exp_card__header__title}>
             <h3>{expTitle}</h3>
-            <span>{renderExpSubtitle}</span>
+            <div className={styles.exp_card__header__subtitle}>
+              <span>{renderExpSubtitle}</span>
+              {/* period */}
+              <span className={styles.exp_card__header__period}>
+                {duration.from} - {duration.to}
+              </span>
+            </div>
           </div>
-        </div>
-
-        {/* period */}
-        <div>
-          <span>{duration.from}</span>
-          <span>{duration.to}</span>
         </div>
       </div>
 

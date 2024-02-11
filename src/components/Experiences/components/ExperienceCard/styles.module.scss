@@ -19,4 +19,15 @@
         display: flex;
         flex-direction: column;
     }
+
+    &__header__subtitle {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+    }
+
+    &__header__period {
+        font-style: italic;
+        font-size: .9em;
+    }
 }

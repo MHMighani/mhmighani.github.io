@@ -15,7 +15,7 @@ function NavigationSection() {
           alt="me"
         />
         <div className={styles.name_contact}>
-          <h2>Mohammad Hossein Mighani</h2>
+          <h2 className={styles.name}>Mohammad Hossein Mighani</h2>
           <Reachme />
         </div>
       </div>
