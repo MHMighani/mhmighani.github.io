@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
 import SkillsSet from "../SkillsSet";
 import About from "../About";
@@ -31,9 +32,25 @@ const TAB_ITEMS = [
 ];
 
 function PresentSection() {
-  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const searchParams = useSearchParams();
+  const pathName = usePathname();
+  const router = useRouter();
 
-  const handleClickTab = (index: number) => setActiveTabIndex(index);
+  const tabQueryParam = searchParams.get("tab");
+  const initialTabIndex =
+    TAB_ITEMS.find((item) => item.id === tabQueryParam)?.tabIndex || 0;
+
+  const [activeTabIndex, setActiveTabIndex] = useState(initialTabIndex);
+
+  const replaceNewTabInUrl = (tabId: string) => {
+    const newRoute = `${pathName}?tab=${tabId}`;
+    router.replace(newRoute);
+  };
+
+  const handleClickTab = (index: number, id: string) => {
+    setActiveTabIndex(index);
+    replaceNewTabInUrl(id);
+  };
 
   const activeContent = TAB_ITEMS[activeTabIndex].content;
 
@@ -44,6 +61,7 @@ function PresentSection() {
       name={item.label}
       active={activeTabIndex === item.tabIndex}
       tabIndex={item.tabIndex}
+      id={item.id}
     />
   ));
 

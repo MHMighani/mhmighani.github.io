@@ -7,6 +7,7 @@ type TabNavItemProps = {
   active?: Boolean;
   handleClickTab?: Function;
   tabIndex: number;
+  id: string;
 };
 
 function TabNavItem({
@@ -14,11 +15,12 @@ function TabNavItem({
   active = false,
   handleClickTab = () => {},
   tabIndex,
+  id,
 }: TabNavItemProps) {
   return (
     <div
       title={name}
-      onClick={() => handleClickTab(tabIndex)}
+      onClick={() => handleClickTab(tabIndex, id)}
       data-active={active}
       className={styles.tab}
     >
