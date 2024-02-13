@@ -3,6 +3,10 @@
     flex-direction: column;
     padding: .2rem;
     flex-basis: 50%;
+
+    @media screen and (max-width: 768px) {
+        max-height: 50%;
+    }
 }
 
 .tab_content_wrapper {

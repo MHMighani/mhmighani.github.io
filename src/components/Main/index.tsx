@@ -4,9 +4,11 @@ import styles from "./styles.module.scss";
 
 function Main() {
   return (
-    <div className={styles.main}>
-      <NavigationSection />
-      <PresentSection />
+    <div className={styles.portfolio}>
+      <div className={styles.main}>
+        <NavigationSection />
+        <PresentSection />
+      </div>
     </div>
   );
 }
