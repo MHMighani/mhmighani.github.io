@@ -2,4 +2,4 @@ My personal website
 
 ## Notes
 
-I used [https://piccalil.li/](Andy Bell) reset file
+I used [Andy Bell](https://piccalil.li/)'s reset file
