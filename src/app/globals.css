@@ -4,6 +4,20 @@
   --seperator-color: #0c0e13;
   --tab-color: #498ba7;
   --primary-text-color: #cccac2;
+  --grey-hue: 180;
+  --grey-sat: 0%;
+  --grey-lit: 50%;
+  --scrollbar-thumb-color: hsl(
+    var(--grey-hue),
+    var(--grey-sat),
+    var(--grey-lit)
+  );
+  --scrollbar-thumb-hover-color: hsl(
+    var(--grey-hue),
+    var(--grey-sat),
+    calc(var(--grey-lit) - 10%)
+  );
+  --scrollbar-thumb-width: 6px;
 }
 
 body,
@@ -13,4 +27,18 @@ html {
 
 body {
   background-color: var(--window-background-color);
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-thumb-width);
+  box-shadow: inset 0 0 var(--scrollbar-thumb-width) var(--seperator-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
 }

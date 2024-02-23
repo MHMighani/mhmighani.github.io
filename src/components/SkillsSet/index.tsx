@@ -67,7 +67,7 @@ const SKILLS = [
 ];
 
 const getLogoFilePath = (iconPathFileName: string) =>
-  `../../assets/images/skills/${iconPathFileName}`;
+  `assets/images/skills/${iconPathFileName}`;
 
 function SkillsSet() {
   const renderSkillsSetImages = SKILLS.map((item) => {
@@ -75,7 +75,7 @@ function SkillsSet() {
       <Skill
         key={item.title}
         title={item.title}
-        logo={require(`../../assets/images/skills/${item.iconPathFileName}`)}
+        logo={require(`assets/images/skills/${item.iconPathFileName}`)}
       />
     );
   });
