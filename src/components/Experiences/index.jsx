@@ -1,12 +1,12 @@
 import ExperienceCard from "./components/ExperienceCard";
+import raychatLogo from "assets/images/exp_raychat.svg";
 
 const EXPERIENCES = [
   {
     id: "raychat",
     expTitle: "Front-End Developer",
     expSubTitle: "Raychat",
-    expLogoAddress:
-      "https://raychat.io/_next/static/media/raychat-logo.ef48f641.svg",
+    expLogoAddress: raychatLogo,
     achievements: [
       "-	Participated in optimizations such as improving loading times by implementing lazy loading techniques, code splitting and rendering optimization.",
       "-	Participated in adding multilingual support to services.",
