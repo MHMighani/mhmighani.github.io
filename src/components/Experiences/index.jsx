@@ -1,5 +1,7 @@
 import ExperienceCard from "./components/ExperienceCard";
 import raychatLogo from "assets/images/exp_raychat.svg";
+import mtaLogo from "assets/images/mta_logo.png";
+import freelancelogo from "assets/images/freelance.svg";
 
 const EXPERIENCES = [
   {
@@ -15,8 +17,32 @@ const EXPERIENCES = [
       "-	Participated in documenting services using Confluence.",
     ],
     duration: { from: "Jul 2022", to: "Present" },
-    about: "A customer service chat platform",
+    about: "Raychat is a customer service chat platform",
     expExternalLink: "https://raychat.io/",
+  },
+  {
+    id: "freelance",
+    expTitle: "Front-End Developer",
+    expSubTitle: "Freelance",
+    expLogoAddress: freelancelogo,
+    achievements: [
+      "-	Coded using HTML, CSS and JavaScript to develop features for both mobile and desktop platforms.",
+    ],
+    duration: { from: "Decamber 2021 ", to: "May 2022" },
+    about: "",
+    expExternalLink: "",
+  },
+  {
+    id: "arad",
+    expTitle: "Python Developer",
+    expSubTitle: "Madar Tarah-e Arad Co",
+    expLogoAddress: mtaLogo,
+    achievements: [
+      "-	Collaborated in the process of building the user interface of a VOIP application as a python developer.",
+    ],
+    duration: { from: "April 2019 ", to: "September 2019 " },
+    about: "",
+    expExternalLink: "",
   },
 ];
 
