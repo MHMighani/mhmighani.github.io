@@ -1,5 +1,5 @@
-import PresentSection from "../PresentSection";
-import NavigationSection from "../NavigationSection";
+import PresentSection from "components/PresentSection";
+import NavigationSection from "components/NavigationSection";
 import styles from "./styles.module.scss";
 
 function Main() {

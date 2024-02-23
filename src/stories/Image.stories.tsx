@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Skill from "../components/Skill";
+import Skill from "components/Skill";
 
 const meta: Meta<typeof Skill> = {
   component: Skill,

@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import TabNavItem from "../components/Tab/components/TabNavItem";
-import TabBar from "@/components/Tab/components/TabBar";
+import TabNavItem from "components/Tab/components/TabNavItem";
 
 const meta: Meta<typeof TabNavItem> = {
   component: TabNavItem,

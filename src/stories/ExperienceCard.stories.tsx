@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import ExperienceCard from "../components/Experiences/components/ExperienceCard";
+import ExperienceCard from "components/Experiences/components/ExperienceCard";
 
 const meta: Meta<typeof ExperienceCard> = {
   component: ExperienceCard,

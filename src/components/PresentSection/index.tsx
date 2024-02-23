@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
-import SkillsSet from "../SkillsSet";
-import About from "../About";
-import TabNavItem from "../Tab/components/TabNavItem/index";
-import TabBar from "../Tab/components/TabBar";
-import Experiences from "../Experiences";
+import SkillsSet from "components/SkillsSet";
+import About from "components/About";
+import TabNavItem from "components/Tab/components/TabNavItem/index";
+import TabBar from "components/Tab/components/TabBar";
+import Experiences from "components/Experiences";
 import styles from "./styles.module.scss";
 
 const TAB_ITEMS = [

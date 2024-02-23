@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Skill from "../Skill";
+import Skill from "components/Skill";
 import styles from "./styles.module.scss";
 
 const SKILLS = [
