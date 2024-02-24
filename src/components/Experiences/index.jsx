@@ -2,6 +2,7 @@ import ExperienceCard from "./components/ExperienceCard";
 import raychatLogo from "assets/images/exp_raychat.svg";
 import mtaLogo from "assets/images/mta_logo.png";
 import freelancelogo from "assets/images/freelance.svg";
+import styles from "./styles.module.scss";
 
 const EXPERIENCES = [
   {
@@ -51,7 +52,7 @@ function Experiences() {
     <ExperienceCard key={exp.id} {...exp} />
   ));
 
-  return <div>{renderExps}</div>;
+  return <div className={styles.experiences_wrapper}>{renderExps}</div>;
 }
 
 export default Experiences;
