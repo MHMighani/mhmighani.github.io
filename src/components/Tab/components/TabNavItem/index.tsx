@@ -25,6 +25,7 @@ function TabNavItem({
       className={styles.tab}
     >
       {name}
+      <div className={styles.underline}></div>
     </div>
   );
 }

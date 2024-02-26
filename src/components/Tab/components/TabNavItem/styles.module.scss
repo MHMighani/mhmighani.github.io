@@ -1,5 +1,5 @@
 .tab {
-    overflow: hidden;
+    position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 200px;
@@ -11,8 +11,18 @@
     padding: .3rem 1rem;
     cursor: pointer;
 
+    .underline {
+        position: absolute;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -4px;
+        background-color: gold;
+    }
 
-    &[data-active="true"] {
-        border-bottom: 1px solid gold;
+
+    &[data-active="true"] .underline{
+        width: 100%;
+        transition: width 250ms;
     }
 }
