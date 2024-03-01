@@ -1,7 +1,5 @@
 .skills {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    // display: flex;
-    // flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
 }
