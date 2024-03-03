@@ -12,7 +12,7 @@ function About() {
 
   const ABOUT = (
     <>
-      I'm a web developer Developer with Proficiency in core Front-End
+      I&apos;m a web developer Developer with Proficiency in core Front-End
       technologies and frameworks such as {renderJavaScript}, {renderTypeScript}
       , {renderHtmlWord}, {renderCssWord}, {renderReactWord}, {renderReduxWord},
       and {renderNextWord}. I prioritize writing clean and maintainable code in
