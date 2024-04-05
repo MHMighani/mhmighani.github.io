@@ -64,6 +64,10 @@ const SKILLS = [
     title: "socketIO",
     iconPathFileName: "socketIo.png",
   },
+  {
+    title: "storybook",
+    iconPathFileName: "storybook.svg",
+  },
 ];
 
 const getLogoFilePath = (iconPathFileName: string) =>
