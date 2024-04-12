@@ -44,6 +44,10 @@ const SKILLS = [
     title: "ReactJS",
     iconPathFileName: "reactJS.png",
   },
+  {
+    title: "Next.JS",
+    iconPathFileName: "nextjs.svg",
+  },
 
   {
     title: "ReduxSaga",

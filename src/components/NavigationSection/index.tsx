@@ -17,7 +17,7 @@ function NavigationSection() {
       strings: [
         "I'm a Web Developer",
         "Focused on Front End",
-        "Always trying to learn",
+        "Eager to learn",
       ],
       typeSpeed: 70,
     });
